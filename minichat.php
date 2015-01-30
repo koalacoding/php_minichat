@@ -1,16 +1,3 @@
-<?php
-// We try to connect to the SQL database.
-try
-{
-	$bdd = new PDO('mysql:host=localhost;dbname=test2;charset=utf8', 'root', '');
-}
-// In case of error.
-catch(Exception $e)
-{
-        die('Error : '.$e->getMessage());
-}
-?>
-
 <!DOCTYPE html>
 <html>
 	<head>
