@@ -10,7 +10,7 @@
 		<center>
 			<form action="minichat_post.php" method="post">
 				Nickname :<br />
-				<input type="text" name="nickname" />
+				<input type="text" name="nickname" value="<?php if (isset($_COOKIE['nickname'])) { echo $_COOKIE['nickname']; } ?>"/>
 				<br /><br />
 				Message :<br /> 
 				<textarea name="message" rows="5" cols="50" style="resize:none"></textarea>
