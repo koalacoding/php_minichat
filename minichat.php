@@ -40,7 +40,9 @@
 			while ($messages = $request->fetch()) {
 				echo '<p><strong>' . htmlspecialchars($messages['nickname'])
 				 . '</strong> : ' . htmlspecialchars($messages['message']) . '<p>';
-			}				
+			}
+
+			$request->closeCursor();
 		?>
 
 	</body>

@@ -16,6 +16,8 @@ if (isset($_POST['nickname']) AND isset($_POST['message'])) {
 	$request->execute(array(
 		'nickname' => $_POST['nickname'],
 		'message' => $_POST['message']));
+
+	$request->closeCursor();
 }
 
 // Redirects the user to minichat.php.
